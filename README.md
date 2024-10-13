@@ -1,2 +1,2 @@
-# rc
-container runtime
+# rund
+rund is a low-level container runtime. A container runtime in that it's responsible for all the parts of running a container that isn’t actually running the program itself, and low-level in that it focuses on just running containers (like runc, lxc etc). Containers are implemented using Linux namespaces and cgroups. Namespaces virtualize system resources, like the file system or networking, for each container. Cgroups provide a way to limit the amount of resources like CPU and memory that each container can use.
